@@ -101,8 +101,8 @@ public class Triangle : IFigureOperations
         var maxSide = Math.Max(a, Math.Max(b, c));
         var perimeter = a + b + c;
 
-        if ((perimeter - maxSide) - maxSide < FigureConstants.MinValue)
-            throw new ArgumentException("Cумма любых двух сторон должна быть больше третьей");
+        if ((perimeter - maxSide) <= maxSide)
+            throw new ArgumentException("Наибольшая сторона треугольника должна быть меньше суммы двух сторон");
     }
 
 }
