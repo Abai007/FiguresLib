@@ -17,8 +17,8 @@ public class Circle : IFigureOperations
     /// <exception cref="ArgumentException">ArgumentException</exception>
     public Circle(double radius)
     {
-        if (radius < FigureConstants.MinValue)
-            throw new ArgumentException($"Радиус круга не может быть ниже числа '{FigureConstants.MinValue}'");
+        if (radius <= 0)
+            throw new ArgumentException($"Радиус круга не может быть ниже числа 0");
         Radius = radius;
     }
 

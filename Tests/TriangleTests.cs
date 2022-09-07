@@ -51,9 +51,10 @@ public class TriangleTests
 
         //Act
         var triangle = new Triangle(a, b, c);
+        var area = triangle.GetArea();
 
         //Assert
-        Assert.Equal(expectedArea, triangle.GetArea());
+        Assert.Equal(expectedArea, area);
     }
 
     /// <summary>
@@ -71,9 +72,10 @@ public class TriangleTests
 
         //Act
         var triangle = new Triangle(a, b, c);
+        var area = triangle.GetArea();
 
         //Assert
-        Assert.Equal(expectedArea, triangle.GetArea());
+        Assert.Equal(expectedArea, area);
     }
 }
 

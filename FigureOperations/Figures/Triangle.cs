@@ -13,12 +13,12 @@ public class Triangle : IFigureOperations
     /// <summary>
     /// Стророна B
     /// </summary>
-    public double B { get; init; }
+    private double B { get; }
 
     /// <summary>
     /// Стророна C
     /// </summary>
-    public double C { get; init; }
+    private double C { get; }
 
     /// <summary>
     /// Конструктор
@@ -85,8 +85,8 @@ public class Triangle : IFigureOperations
     /// <exception cref="ArgumentException">ArgumentException</exception>
     private void ValidateSide(params double[] sides)
     {
-        if (sides.Any(s => s <= FigureConstants.MinValue)) 
-            throw new ArgumentException($"Стороны треугольника не могут быть меньше '{FigureConstants.MinValue}'");
+        if (sides.Any(s => s <= 0)) 
+            throw new ArgumentException("Стороны треугольника не могут быть меньше или равно 0");
     }
 
     /// <summary>

@@ -28,8 +28,9 @@ public class CircleTests
 
         //Act
         var circle = new Circle(radius);
+        var area = circle.GetArea();
 
         //Assert
-        Assert.Equal(expectedArea, circle.GetArea());
+        Assert.Equal(expectedArea, area);
     }
 }
