@@ -1,10 +1,12 @@
-﻿namespace Tests;
+﻿using FigureLib.Operations.Figures;
 
+namespace FigureLib.Tests;
+
+/// <summary>
+///     FigureLib.Tests for circle operations
+/// </summary>
 public class CircleTests
 {
-    /// <summary>
-    /// Проверка на отрицатательные значения радиуса при создании круга
-    /// </summary>
     [Fact]
     public void CreateCircle_FailOnWrong()
     {
@@ -16,9 +18,6 @@ public class CircleTests
         Assert.Throws<ArgumentException>(() => new Circle(radius));
     }
 
-    /// <summary>
-    /// Проверка на правильность расчета рассчета площади круга
-    /// </summary>
     [Fact]
     public void CalculateAreaCircle_Success()
     {

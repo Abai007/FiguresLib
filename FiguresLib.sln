@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureOperations", "FigureOperations\FigureOperations.csproj", "{81525D25-C41F-49D3-A8F8-05CD2D385AE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureLib.Operations", "src\FigureLib.Operations\FigureLib.Operations.csproj", "{81525D25-C41F-49D3-A8F8-05CD2D385AE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureLib.Tests", "src\FigureLib.Tests\FigureLib.Tests.csproj", "{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureLib.Common", "src\FigureLib.Common\FigureLib.Common.csproj", "{DC5AF266-EF6B-4025-8199-62095A8BD7CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{5E732EA5-6630-46BF-8B21-DA0D34600059}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6E9A847F-182F-4449-A067-38E8DB9459EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,11 +27,20 @@ Global
 		{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5AF266-EF6B-4025-8199-62095A8BD7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5AF266-EF6B-4025-8199-62095A8BD7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5AF266-EF6B-4025-8199-62095A8BD7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5AF266-EF6B-4025-8199-62095A8BD7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA26AF7D-9ED6-4D33-BCBC-F74DC5717B45}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC5AF266-EF6B-4025-8199-62095A8BD7CF} = {5E732EA5-6630-46BF-8B21-DA0D34600059}
+		{81525D25-C41F-49D3-A8F8-05CD2D385AE9} = {5E732EA5-6630-46BF-8B21-DA0D34600059}
+		{F4491FA0-DCD3-408A-8C9F-9A8D8BB24E97} = {6E9A847F-182F-4449-A067-38E8DB9459EE}
 	EndGlobalSection
 EndGlobal
